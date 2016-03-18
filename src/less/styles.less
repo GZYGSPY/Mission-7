@@ -12,6 +12,7 @@ body {
   width: 100%;
   font-family: 微软雅黑;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 a:link {
@@ -44,9 +45,9 @@ header {
   background-color: white;
 }
 
-img{
-  &.v-align-m{
-    vertical-align: middle;
+img {
+  &.v-align-sub {
+    vertical-align: sub;
   }
 }
 
@@ -54,8 +55,7 @@ img{
   .nav-brand {
     float: left;
     cursor: pointer;
-    div {
-      float: left;
+    > * {
       margin: 0 5px;
     }
     &:first-child {
@@ -80,11 +80,18 @@ img{
       &.lively {
         &.active, &:hover {
           color: #e7504d;
+          height: 52px;
           border-bottom: 5px #e7504d solid;
         }
       }
       &.highlights {
         color: #e7504d;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      > * {
+        margin-left: 5px;
       }
     }
   }
@@ -95,4 +102,9 @@ img{
     float: left;
     margin: 0 5px;
   }
+}
+
+.banner {
+  height: 692px;
+  overflow: hidden;
 }
