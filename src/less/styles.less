@@ -1,0 +1,98 @@
+@main-width: 1280px;
+@fill-parent: 100%;
+@main-nav-height: 57px;
+
+html {
+
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 微软雅黑;
+  font-size: 14px;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: @main-width;
+  margin: auto;
+}
+
+header {
+  height:;
+  width: @fill-parent;
+}
+
+.main-nav {
+  height: @main-nav-height;
+  line-height: @main-nav-height;
+  background-color: white;
+}
+
+img{
+  &.v-align-m{
+    vertical-align: middle;
+  }
+}
+
+.nav {
+  .nav-brand {
+    float: left;
+    cursor: pointer;
+    div {
+      float: left;
+      margin: 0 5px;
+    }
+    &:first-child {
+      margin-left: 60px;
+    }
+    .name {
+      font-family: 黑体;
+      font-weight: lighter;
+      font-size: 21px;
+    }
+  }
+}
+
+.menu {
+  &.nav-menu {
+    float: right;
+    .menu-item {
+      width: 65px;
+      height: 57px;
+      text-align: center;
+      cursor: pointer;
+      &.lively {
+        &.active, &:hover {
+          color: #e7504d;
+          border-bottom: 5px #e7504d solid;
+        }
+      }
+      &.highlights {
+        color: #e7504d;
+      }
+    }
+  }
+  &:last-child {
+    margin-right: 65px;
+  }
+  div {
+    float: left;
+    margin: 0 5px;
+  }
+}
